@@ -23,4 +23,15 @@
 + (NSMutableArray*) readPlistFile:(NSString *)fileName FilePath:(NSString *) extrafilePath;
 + (BOOL) writePlistFiles:(NSArray *)array FileName:(NSString *)fileName FilePath:(NSString *) extrafilePath;
 
+
+
++ (BOOL)isFileExists: (NSString *)path;
+
++ (long long)fileSizeWithPath: (NSString *)path;
+
++ (void)moveFile:(NSString *)fromPath toPath: (NSString *)toPath;
+
+
++ (void)removeFileAtPath: (NSString *)path;
+
 @end
